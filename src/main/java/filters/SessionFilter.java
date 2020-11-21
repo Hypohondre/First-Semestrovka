@@ -7,7 +7,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
 
-@WebFilter(urlPatterns = {"/list", "/profile"}, filterName = "filter1")
+@WebFilter(urlPatterns = {"/profile"}, filterName = "filter1")
 public class SessionFilter implements Filter {
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -28,7 +28,7 @@ public class SessionFilter implements Filter {
         HttpSession session = request.getSession();
 
 
-        if (session == null || session.getAttribute("user") == null) {
+        if (session == null || session.getAttribute("user_id") == null) {
             request.getServletContext().getRequestDispatcher("/login").forward(request, response);
         }
 

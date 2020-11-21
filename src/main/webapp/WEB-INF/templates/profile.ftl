@@ -6,6 +6,7 @@
     <title>profile</title>
 </head>
 <body>
+    ты успешно зашел на ресурс
 
 </body>
 </html>

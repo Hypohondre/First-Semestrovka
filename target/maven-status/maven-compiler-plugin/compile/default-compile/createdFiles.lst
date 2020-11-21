@@ -1,9 +1,0 @@
-servlets\LoginServlet.class
-models\User.class
-servlets\UserListServlet.class
-services\LoginService.class
-services\RegService.class
-services\Helper.class
-filters\SessionFilter.class
-listeners\ServletContextListener.class
-servlets\RegistrationServlet.class

@@ -19,7 +19,7 @@ public class CookieFilter implements Filter {
         Cookie[] cookies = req.getCookies();
 
         for (Cookie cookie : cookies) {
-            if (cookie.getValue().equals("user")) {
+            if (cookie.getValue().equals("user_id")) {
                 break;
             } else {
                 req.getServletContext().getRequestDispatcher("/login").forward(req, resp);
